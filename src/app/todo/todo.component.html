@@ -1,0 +1,32 @@
+<div class="container mt-5 d-flex-column">
+  <h1> TODO LIST</h1>
+    <mat-form-field class="data">
+      <mat-label>Add New Task</mat-label>
+      <input matInput [(ngModel)]="newtodo">
+    </mat-form-field>
+    <br>
+    <button type="submit" class="btn btn-success mt-3 " (click)="save()"><i class="pi pi-plus" style="color: white"></i>
+    </button>
+</div>
+
+<div class="container mt-5 ">
+<ul class="list-group ">
+    <!-- <li   class="list-group-item fs-1 " class="{{(todo.isCompleted)?'':'done'}}" *ngFor="let todo of todos let i = index">
+      {{todo.data}}
+      <button  (click)="done(i)" class=" mx-3 btn pe-3 border border-success" style="float: right;" ><i class="pi pi-check" style="color: green"></i>
+      </button>
+      <button class=" btn  mx-3 border border-danger" style="float: right;" (click)="deleteTask(i)"><i class="pi pi-times" style="color: red"></i>
+      </button>
+    </li> -->
+    <mat-list role="list" class="listt">
+      <mat-list-item role="listitem" class=" TEXT border-bottom border-danger mb-2" class="{{(todo.isCompleted)?'':'done'}}" *ngFor="let todo of todos let i = index">
+        {{todo.data}}
+        <button  (click)="done(i)" class=" mx-3 btn pe-3 border border-success" style="float: right;" ><i class="pi pi-check" style="color: green"></i>
+        </button>
+        <button class=" btn  mx-3 border border-danger" style="float: right;" (click)="deleteTask(i)"><i class="pi pi-times" style="color: red"></i>
+        </button>
+      </mat-list-item>
+
+    </mat-list>
+  </ul> 
+</div>

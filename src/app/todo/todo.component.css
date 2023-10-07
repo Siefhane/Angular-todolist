@@ -1,0 +1,20 @@
+li{
+    padding: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.done{
+    text-decoration: line-through;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.data{
+    width:80%
+}
+.TEXT{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.listt{
+    width: 50%;
+}
